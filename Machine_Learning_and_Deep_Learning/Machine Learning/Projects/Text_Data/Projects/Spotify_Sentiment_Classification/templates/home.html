@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            /* Centering the H1 */
+            h1 {
+                text-align: center;
+                font-family: Arial, sans-serif;
+                margin-top: 50px;
+                color: #1DB954; /* Spotify green color */
+            }
+
+  
+            /* Styling the form and button */
+            form {
+                text-align: center;
+                margin-top: 100px;
+            }
+
+            input[type="text"] {
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                width: 80%;
+                max-width: 400px;
+            }
+
+            input[type="submit"] {
+                background-color: #1DB954; /* Spotify green */
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                text-transform: uppercase;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+
+            input[type="submit"]:hover {
+                background-color: #17a745; /* Darker green on hover */
+            }
+
+            input[type="submit"]:active {
+                transform: scale(0.98);
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>Spotify Sentiment Analysis</h1>
+
+        <div class = 'conatiner'>
+        <form action="/prediction" method="POST">
+            <label for="review">Enter Your Review:</label><br>
+            <input type="text" name="review"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    </body>
+</html>
